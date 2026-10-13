@@ -82,9 +82,9 @@ Verse.Root_Play:Update ()
 
 					TraverseParms traverse = __instance.traverseParms;
 					Log.Warning("bailing out of path calculation for "+traverse.pawn+" with "+traverse.pawn.TicksPerMoveCardinal+"/"+traverse.pawn.TicksPerMoveDiagonal+" TicksPerMoveCardinal/Diagonal after 1000 path nodes added to prevent mem leaks, on num " + num + " aiming for " + parentIndex);
-					__result = PawnPath.NotFound;
+					//__result = PawnPath.NotFound;
 
-					return false;
+					return true;
 				}
 				num = parentIndex;
 				max++;
